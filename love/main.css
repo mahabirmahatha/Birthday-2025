@@ -103,19 +103,30 @@
             transform: translate(-50%,-50%) rotateX(90deg);
     background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
   }
+  
 
   #bottom-text {
     position: fixed;
-    bottom: 20px;
+    text: size adjust 10px;
+    bottom: 10px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Dancing Script', cursive;
-    font-size: 24px;
+    font-size: 18px;
     color: #e30606e0;
     text-shadow: 0 0 5px #fff, 0 0 10px #5d5fe7, 0 0 15px #f3edeb, 0 0 20px #fffefe;
     z-index: 200;
     animation: fadeInFooter 3s ease-in-out;
     pointer-events: none;
+    text-align: center;
+    width: 90%;
+  }
+
+  @media screen and (max-width: 658px) {
+    #bottom-text {
+      font-size: 12px;
+    }
   }
 
   @keyframes fadeInFooter {
